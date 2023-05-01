@@ -3,7 +3,7 @@ const app = express();
 
 //Usando o express EJS
 app.set('view engine', 'ejs');
-
+app.use(express.static('public'));
 app.get("/:nome/:lang", (req, res) =>{
     var nome = req.params.nome;
     var lang = req.params.lang;
@@ -26,6 +26,6 @@ app.get("/:nome/:lang", (req, res) =>{
     });
 });
 
-app.listen(8080, ()=>{
+app.listen(8080, ()=>{ 
     console.log("App rodando!");
 });
