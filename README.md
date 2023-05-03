@@ -3,5 +3,7 @@
 
 
 $ git clone https://github.com/rod9000/GuiaPerguntas.git
+
 $ cd ./GuiaPerguntas
+
 $ npm install
